@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="../../styles/product.css">
+
+   <title></title>
+</head>
+
+<body>
+    <header>
+<a href="/HTMLClassExerciseF15">
+<img src="../../images/pumpkin.gif" alt="Pumpkin" >
+</a>
+
+<div>
+
+      <h1> The Halloween Store </h1>
+    
+      <section class="goblin">
+      <b> For the little Goblin in all of us! </b>
+      </section>
+</div>
+    </header>
+    <ul class="horizontal_bar">
+<li><a class="home" id="home_link" href="../../index.html">Home</a></li>
+<li><a class="product_list" id="product_link" href="product.html">Product List</a></li>
+<li><a id="personal_link" href="/personal">Personal</a></li>
+<li><a id="decorate_link" href="/decorating_ideas">Decorating Ideas</a></li>
+<li><a id="email_link" href="/join_email">Join Email</a></li>
+</ul>
+
+<ul id="left_sidebar">
+      <li> <b> <a id="props" href="/props">Props</a> </li>
+    <li> <a id="costumes" href="/costumes">Costumes</a> </li>
+    <li> <a id="special_fx" href= "/special effects">Special FX</a> </li>
+    <li> <a id="masks" href="/masks">Masks</a> </li> </b>
+</ul>
+
+    <section id="right_sidebar">
+        <h3> Customers who bought this product also bought: </h3>
+        <ul class="also_bought">
+            <li> <a href="/flying_bats.jpg">
+                    <img id="bats" src="../../images/flying_bats.jpg" alt="Bats" > </a></li>
+                     <li> <a id="bat_caption" href="/flying_bats">Flying Bats</a> </li>
+                     <li> <a href="/rat.jpg">
+                    <img id="rat" src="../../images/rat1.jpg" alt="Rat" > </a></li>
+                     <li> <a id="rat_caption" href="/ugly_rat">16" Ugly Rat</a> </li>
+                     <li> <a href="/strobe.jpg">
+                    <img id="strobe" src="../../images/strobe1.jpg" alt="Strobe" > </a></li>
+                     <li> <a id="strobe_caption" href="/mini_strobe_light">Mini strobe light</a> </li>
+        </ul>
+    </section>
+    <section class="cat_title"> <b> 20" Deranged cat </b> </section>
+     <section class="cat">
+     <a href="/cat">
+<img src="../../images/cat1.jpg" alt="Cat" >
+</a>
+
+   </section>
+
+      <section class="product_description">
+This cat provides its own light and is perfect for a backyard haunting.
+<br> <b> Price: </b> $19.99
+</section>
+    <footer>
+        <section class="copyright">
+        </section>
+</footer>
+
+
+
+</body>
+</html>
+
+
+product.css
+
+/*
+    Created on : Sep 17, 2015, 9:38:32 PM
+    Author     : emccarthy3
+*/
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:orange;
+    background: linear-gradient(45deg,white, orange, black );
+
+     border-bottom: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+margin-bottom: 0px;
+}
+html {
+background-image: url("../images/bats.gif");
+}
+body {
+background-color: #ffffff;
+max-width: 800px;
+   border-style: solid;
+    border-width: 5px;
+border-color: black;
+box-shadow: 10px 10px 5px #888;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 100%;
+margin: 0 auto;
+width: 100%;
+
+}
+
+li{
+    margin-top: 0px;
+}
+img{
+    float:left;
+margin-bottom:0px;
+}
+div{
+
+    font-size:120%;
+    margin-left: 120px;
+
+}
+
+h1{
+margin-top:0px;
+margin-bottom: 0px;
+
+
+}
+.horizontal_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#right_sidebar{
+
+     float: right;
+
+    margin-top: 0px;
+    width:180px;
+
+    background-color: #F5DEB3;
+    height: 500px;
+}
+li {
+    float: left;
+}
+
+#decorate_link:link, #home_link:link, #product_link:link, #email_link:link, #personal_link:link{
+    display: block;
+    width: 151px;
+    height: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 4px;
+     padding-bottom: 8px;
+     padding-top:8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:0px;
+}
+#email_link:link{
+    width:156px
+}
+
+#home_link:hover, #decorate_link:hover, #home_link:hover, #product_link:hover, #email_link:hover, #personal_link:hover{
+    background-color: grey;
+    font-size: 14px;
+    color:black;
+}
+
+.horizontal_bar{
+    margin-top:0px;
+}
+
+#left_sidebar{
+    list-style-type: none;
+
+    padding: 0;
+}
+
+
+li{
+    padding:0;
+    margin:0;
+}
+
+
+#props, #costumes, #special_fx, #masks {
+      display: block;
+   padding-bottom: 10px;
+   padding-top: 0px;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    width: 160px;
+height:20px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+margin-top:2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#props:link{
+    margin-top: 50px;
+}
+
+.also_bought{
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.cat{
+       padding-left: 170px;
+    padding-bottom: 100px;
+    float: left;
+    margin-left: 40px;
+}
+.clear{
+    clear:both;
+}
+#catlink{
+    clear:both;
+    display: block;
+    margin-left: 170px;
+}
+.product{
+    padding-bottom: 0px;
+}
+.cat img{
+
+   
+}
+.product description{
+    margin-left: 20px;
+    overflow:hidden;
+}
+.cat_title{
+margin-left: 200px;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p{
+    margin-top:0px;
+padding-left: 170px;
+}
+
+#left_sidebar{
+position:absolute;
+   vertical-align: top;
+    top:92px;
+
+
+    width: 160px;
+    float:left
+}
+
+h3{
+    font-size: 14px;
+}
+
+.copyright{
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top:20px;
+    text-align: center;
+    margin-right:150px;
+}
+#bats, #rat, #strobe{
+   max-width: 100%;
+   margin-left: 40px;
+    width:100px;
+    height: 100px;
+}
+#bat_caption, #rat_caption, #strobe_caption{
+    margin-left: 40px;
+    font-size: 16px;
+    color:black;
+}
+#bat_caption:hover, #rat_caption:hover, #strobe_caption:hover, #bat_caption:focus, #rat_caption:focus, #strobe_caption:focus{
+    font-size: 16px;
+    color:green;
+}
+footer{
+clear:both;
+     background: linear-gradient(45deg,black, orange, white );
+     background-color: orange;
+     border-top: black;
+    border-top-width: 2px;
+    border-top-style: solid;
+    text-align: center;
+    padding-top:10px;
+
+
+    font-size: 75%;
+}
+
+#home_link{
+    color:white;
+}
