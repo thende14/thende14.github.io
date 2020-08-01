@@ -1,0 +1,287 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+        <title>GPA</title>
+
+        <meta content="width=device-width , initial-scale=1" name="viewport">
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <style type="text/css">
+        body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Serif', serif;
+        }
+        nav{
+                background-color: #b7edc5;
+                display:block;
+                padding: 20px;
+                margin: 0;
+        }
+   .nav{
+                list-style-type: none;
+                float:left;
+                margin-left: 40px;
+                margin-top: -20px;
+
+     }
+     a{
+        text-decoration: none;
+        color: black;
+     }
+     .nav a:hover{
+        color:blue;
+     }
+     .nav:hover{
+                transform:scale(1.3);
+     }
+ 
+     .nav a:active{
+        color:red;
+     }
+
+     .head{
+        width: 100%;
+        height: 200px;
+        background-color:#72e8f7;
+        margin-top: 0;
+     }
+     .sidebar{
+        height: 500px;
+        width: 20%;
+        background-color: #cff5fa;
+        float: left;
+     }
+
+     .main-content{
+        text-align: center;
+        width: 80%;
+        float: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top bottom;
+        height: 500px;
+     }
+   
+   .footer{
+        clear: both;
+        height: 200px;
+        background-color: #4d524b;
+   }
+   .footer p{
+        text-align: center;
+        color: #f0f7ed;
+        padding: 20px;
+   }
+</style>
+</head>
+<body>
+<nav class=".nav-bar">
+    <ol>
+        <li class="nav"><a href="#">Home</a></li>
+        <li  class="nav"><a href="#">Description</a></li>
+        <li  class="nav"><a href="#">Teaching-Assistant</a></li>
+       <li  class="nav"><a href="#">GPA</a></li>
+    </ol>
+</nav>
+<header class="head">
+        <h1>MY LOGO</h1>
+</header>
+<aside class="sidebar">
+        My SIDEBAR
+</aside>
+<div class="main-content">
+        <div>
+    <br>
+   <label>Your Name:</label>
+   <input type="text" id="name" placeholder="enter your name"><br><br>
+   <center>
+<form name="gpacalcform">
+<table border=2 bgcolor=#9ded7b cellpadding="5" 
+cellspacing="2">
+<th></th>
+<th>gradeLetter</th>
+<th>credits</th>
+<tr>
+<td>Subject 1</td>
+<td><input type=text size=5 id="gr1" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr1" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 2</td>
+<td><input type=text size=5 id="gr2" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr2" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>subject 3</td>
+<td><input type=text size=5 id="gr3" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr3" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 4</td>
+<td><input type=text size=5 id="gr4" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr4" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 5</td>
+<td><input type=text size=5 id="gr5" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr5" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 6</td>
+<td><input type=text size=5 id="gr6" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr6" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 7</td>
+<td><input type=text size=5 id="gr7" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr7" align=top 
+maxlength=5></td>
+</tr>
+<tr>
+<td>Subject 8</td>
+<td><input type=text size=5 id="gr8" align=top 
+maxlength=5></td>
+<td><input type=text size=5 id="cr8" align=top 
+maxlength=5></td>
+</tr>
+<tr align=center>
+<td colspan=3><input type="button" value="calculate" 
+name="calcbutton"
+onclick="gpacalc()"></td>
+</tr>
+</table>
+</form>
+<br>
+</center>
+
+<br>
+
+<script lang="javascript" >
+
+<!-- 
+function gpacalc()
+{
+  //alert("hjjkcf");
+//  alert("hjdbj");
+//define valid grades and their values
+var gr = new Array(9); 
+var cr = new Array(9);
+var ingr = new Array(5);
+var incr = new Array(5);
+//alert("hjjkcf");
+// define valid grades and their values
+var grcount = 10; 
+gr[0] = "A+";
+cr[0] = 5;
+gr[1] = "A"; 
+cr[1] = 4; 
+gr[2] = "A-";
+cr[2] = 3.66;
+gr[3] = "A+";
+cr[3] = 3.33;
+gr[4] = "A";
+cr[4] = 3;
+gr[5] = "A-";
+cr[5] = 2.66;
+gr[6] = "A+";
+cr[6] = 2.33;
+gr[7] = "C";
+cr[7] = 2;
+gr[8] = "C-";
+cr[8] = 1.66;
+gr[9] = "D";
+cr[9] = 1;
+gr[10] = "F";
+cr[10] = 0;
+//alert("hjjkcf");
+// retrieve user input
+//ingr --input grade
+//incr --input credit
+ingr[0] = document.getElementById("gr1").value;
+ingr[1] = document.getElementById("gr2").value;
+ingr[2] = document.getElementById("gr3").value;
+ingr[3] = document.getElementById("gr4").value;
+ingr[4] = document.getElementById("gr5").value;
+ingr[5] = document.getElementById("gr6").value;
+ingr[6] = document.getElementById("gr7").value;
+ingr[7] = document.getElementById("gr8").value;
+incr[0] = document.getElementById("cr1").value;
+incr[1] = document.getElementById("cr2").value;
+incr[2] = document.getElementById("cr3").value;
+incr[3] = document.getElementById("cr4").value;
+incr[4] = document.getElementById("cr5").value;
+incr[5] = document.getElementById("cr6").value;
+ingr[6] = document.getElementById("cr7").value;
+ingr[7] = document.getElementById("cr8").value;
+
+// calculate gpa
+var allgr =0;
+var allcr = 0;
+var gpa = 0;
+for (var x = 0; x < 5 + 3; x++)
+        {
+        if (ingr[x] == "") break;
+//      if (isnan(parseint(incr[x]))) alert("error- you did not enter a numeric  credits value for class if the class is worth 0 credits then enter the number 0 in  the field."); 
+        var validgrcheck = 0;
+        for (var xx = 0; xx <= grcount; xx++)
+                {
+                if (ingr[x] == gr[xx])
+                        {
+                        allgr = allgr + (parseInt(incr[x],10) * cr[xx]);
+                        allcr = allcr + parseInt(incr[x],10);
+                        validgrcheck = 1;
+                        break;
+                        }
+                }
+        if (validgrcheck == 0)
+                {
+                alert("error- could not recognize the grade entered for class " + eval(x +  1) + ". please use standard college grades in the form of a a- b+ ...f.");
+                return 0;
+                }
+        }
+
+// this if-check prevents a divide by zero error
+if (allcr == 0)
+        {
+        alert("error- you did not enter any credit values! gpa = n/a");
+        return 0;
+        }
+
+gpa = allgr / allcr;
+
+var name = document.getElementById("name").value;
+alert("Hello " +name+" you GPA is "+eval(gpa));
+
+return 0;
+}
+
+//-->
+   
+
+</script>
+
+ 
+  </div>
+</div>
+
+<footer class="footer">
+        <p>This is Made By Tyranie Henderson.</p>
+        <p>All copyrights are Reserved.</p> 
+</footer>
+</body>
+</html>
